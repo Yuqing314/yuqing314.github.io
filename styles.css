@@ -1,0 +1,184 @@
+
+body{
+	background: #f9f9f9;
+}
+
+h1 {
+  color: #282828;
+  font-family: verdana;
+  font-size: 200%;
+  margin: 40px;
+}
+
+
+h3 {
+	position: relative;
+  color: #282828;
+  font-family: verdana;
+  font-size: 100%;
+  margin: 16px;
+  left: 24px;
+  top: 8px;
+
+
+}
+
+
+.ci{
+	font: verdana;
+	margin: 40px;
+	border: 0px;
+
+	font-size: 16px;
+
+
+
+
+}
+
+
+
+
+select{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: 40px;
+  width: 96px;
+}
+
+
+.ed{
+	font: verdana;
+	margin: 40px;
+	border: 0px;
+	font-size: 16px;
+}
+
+.tu{
+	font: verdana;
+	position: relative;
+	margin: 0px;
+	border: 0px;
+	left: 40px;
+	font-size: 16px;
+	line-height: 24px;
+
+
+}
+
+.Submit {
+  background-color:#4CAF50;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.Reset {
+  background-color: #979797;
+  border: 1px;
+
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ac{position: absolute;
+	font: verdana;
+	margin: 40px;
+	border: 0px;
+	font-size: 16px;
+	left: 500px;
+	top: 836px;
+	text-align: left;
+	max-width: 600px;
+
+
+}
+
+.pi{
+	position: relative;
+	font: verdana;
+	margin: 40px;
+	border: 0px;
+	
+	max-width: 300px;
+
+	font-size: 16px;
+
+}
+
+img{ position: relative;
+
+	margin: 40px;
+
+}
+
+h2 {
+
+	color: pink;
+	font: verdana;
+
+	border: 0px;
+	padding: 0px;
+	line-height: 8px;
+	bottom: 4px;
+
+
+
+}
+
+.we{
+	position: absolute;
+	font: verdana;
+	margin: 40px;
+	border: 0px;
+	top: 100px;
+	left: 500px;
+	max-width: 600px;
+	min-width: 500px;
+
+	font-size: 16px;
+
+
+}
+
+.Portfolio{
+
+	position: absolute;
+	left: 544px;
+	top: 48px;
+}
+
+.mail{
+
+	position: absolute;
+	left: 544px;
+	top: 80px;
+}
+
+
+
+p  {
+  color: #282828;
+  font-family: verdana;
+  font-size: 100%;
+}
