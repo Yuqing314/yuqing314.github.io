@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title> hw6</title>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/hw6.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+<div class="calculator" id="mortgage">
+<h1>Mortgage Calculator</h1>
+
+  <div class="input" >
+
+
+Principal amount <br>
+<input type="text" id="num1" value=""> $ <br>
+
+Yearly percentage interest rate <br>
+
+<input type="text" id="num2"  value=""> <br>
+
+Loan term in months <br>
+<input type="text" id="num3"  value=""> <br>
+
+
+
+<button class="btn" id="calculate">Calculate </button>
+<button class="btn" id="reset"> Clear </button>
+
+
+  </div>
+
+  <div class="output" id="results">
+
+
+Monthly payments<br>
+<input type = "text" id = "R"  size = "20" value="" /> $ <br> 
+
+Sum of all payments<br>
+<input type = "text" id = "Sum"  size = "20" value=""  /> $<br>
+
+Total interest paid<br>
+<input type = "text" id = "Total"  size = "20" value="" /> $<br>
+
+
+  </div>
+
+
+
+
+
+</div>
+
+<script type = "text/javascript">
+
+   document.getElementById("calculate").onclick = getMortgage;
+   document.getElementById('reset').onclick = reset;
+
+   function reset (){
+    window.location.reload(false);
+   }
+
+
+   function getMortgage ()
+   {
+     let elt1 = document.getElementById("num1");
+     let elt2 = document.getElementById("num2");
+     let elt3 = document.getElementById('num3');
+     let x = parseFloat (elt1.value);
+     let y = parseFloat (elt2.value);
+     let z = parseFloat (elt3.value);
+
+    if (x<0 || y<0 || z<0 || isNaN(x) || isNaN(y) || isNaN(z))
+    {
+      alert('Please make sure you enter positive numbers.');
+
+    }
+
+
+else{
+     r = y / 12;
+     rr = r + 1;
+     rrr = Math.pow(rr,z);
+     rrrr = 1 - (1 / rrr); 
+     R0 = x * r / rrrr;
+     Sum0 = R0 * z;
+     Total0 =  Sum0 - x;
+     R = R0.toFixed(2);
+     Sum = Sum0.toFixed(2);
+     Total = Total0.toFixed(2);
+
+     document.getElementById('R').value = R;
+     document.getElementById('Sum').value = Sum;
+     document.getElementById('Total').value = Total;
+   }
+     
+     }
+   
+
+ 
+
+
+
+</script>
+
+
+</body>
+
+
+</html>
