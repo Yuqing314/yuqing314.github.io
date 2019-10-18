@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title> hw8</title>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/hw8.css">
+
+</head>
+
+<body>
+
+  <div class="imageContainer">
+   
+    <h1>Galaxies</h1>
+
+    <script type = "text/javascript">
+
+      let images = new Array();
+
+      let caption = new Array();
+     
+      images = ["GalaxyCluster", "InteractingGalaxies", "M51", "M104", "NGC1300", "NGC6217"];
+
+      caption = ["Galaxy Cluster", "Interacting Galaxies", "M51", "M104", "NGC1300", "NGC6217"];
+
+      let anand = Math.floor (Math.random() * images.length);
+      let yuqing = Math.floor (Math.random() * caption.length);
+      
+      document.writeln("<img src = images/" + images[anand] + ".jpg />" + "<p>"+caption[yuqing]+ "</p> " );
+     
+      document.writeln ("<br /><br />");
+
+     
+    
+    </script>
+
+    <button  type="text" id="refresh"> Check another picture</button>
+
+     <script type = "text/javascript">
+       document.getElementById('refresh').onclick = refresh;
+       function refresh()
+       {
+        window.location.reload(true);
+       }
+
+      </script>
+
+  </div>
+
+</body>
+
+</html>
