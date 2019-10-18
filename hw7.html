@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title> hw7</title>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/hw7.css">
+
+</head>
+
+<body>
+
+
+<div class="register" >
+<h1>Register to start your journey</h1>
+
+
+
+
+User name 
+<br>
+<input type="text" id="username" name="username" value=""> <br>
+
+Password <br>
+
+<input type="text" id="password1"  value=""> <br>
+
+Repeat password <br>
+<input type="text" id="password2"  value=""> <br>
+
+
+<div class="btn">
+<button class="btn" id="register">Register </button>
+<button class="btn" id="reset"> Clear </button>
+</div>
+
+
+
+</div>
+
+<script type = "text/javascript">
+//variable
+   document.getElementById("register").onclick = validate;
+   document.getElementById('reset').onclick = reset;
+//functions
+
+//reset reloads page from cache
+   function reset (){
+    window.location.reload(true);
+   }
+
+
+
+   
+function validate()
+{  let elt1 = document.getElementById('username').value;
+   let letters1 = /^[a-zA-Z][0-9a-zA-Z]+$/;
+   let letters2 = /^[0-9a-zA-Z]+$/;
+   let letters3 = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z])/;
+
+   let elt2 = document.getElementById('password1').value;
+   let elt3 = document.getElementById('password2').value;
+
+   if(elt1.length > 5 && elt1.length < 11 ) 
+   // The user name must be between 6 and 10 characters long.
+      {   
+        
+         if (elt1.match(letters1)) 
+         //The user name must contain only letters and digits.The user name cannot begin with a digit.
+         { 
+         
+           if (elt2 === elt3)
+            //The password and the repeat password must match.
+           { 
+           
+             if (elt2.length > 5 && elt2.length < 11)
+             //The password must be between 6 and 10 characters.
+             { 
+             
+              if (elt2.match(letters2)) 
+                //The password must contain only letters and digits.
+              { 
+                
+                if (elt2.match(letters3)) 
+                  //The password must have at least one lower case letter, at least one upper case letter, and at least one digit.
+                {
+
+                   alert("Passed Validation.");
+                }
+                else{  alert("Invalid Input."); }
+
+              }
+              else{  alert("Invalid Input."); }
+
+
+
+            
+             }
+             else{  alert("Invalid Input."); }
+           }
+           else{  alert("Invalid Input."); }
+
+         
+          }
+          else{  alert("Invalid Input."); }
+
+        
+           
+      }
+
+
+
+   else
+      {  
+
+  alert("Invalid Input."); 
+     
+      }  
+}
+
+
+
+
+ 
+
+
+
+</script>
+
+
+</body>
+
+
+</html>
