@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title> hw9</title>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/travel_show.css">
+
+</head>
+
+<body>
+
+  <div class="imageContainer">
+   
+    <h1> Travel Show</h1>
+    <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 11</div>
+    <img src="images/hw9/agra_fort.jpg" >
+    <div class="text">Agra fort</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 11</div>
+    <img src="images/hw9/ajanta_ellora.jpeg" >
+    <div class="text">Ajanta ellora</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 11</div>
+    <img src="images/hw9/akshardham_temple.jpg" >
+    <div class="text">Akshardham temple</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 11</div>
+    <img src="images/hw9/gateway_of_india.jpg" >
+    <div class="text">Gateway of India</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 11</div>
+    <img src="images/hw9/hawa_mahal.jpeg" >
+    <div class="text">Hawa mahal</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 11</div>
+    <img src="images/hw9/mehrangarh_fort.jpg" >
+    <div class="text">Mehrangarh fort</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 11</div>
+    <img src="images/hw9/mysore_palace.jpeg" >
+    <div class="text">Mysore palace</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 11</div>
+    <img src="images/hw9/qutub_minar.jpg" >
+    <div class="text">Qutub minar</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 11</div>
+    <img src="images/hw9/sun_temple.jpg" >
+    <div class="text">Sun temple</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 11</div>
+    <img src="images/hw9/taj_mahal.jpeg" >
+    <div class="text">Taj Mahal</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">11 / 11</div>
+    <img src="images/hw9/victoria_memorial.jpg" >
+    <div class="text">Victoria Memorial</div>
+  </div>
+
+</div>
+
+    <script type = "text/javascript">
+      
+      var slideIndex = 0;
+      showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+
+}
+
+
+
+     
+    </script>
+
+  <!-- start and stop buttons 
+s
+    <button  type="text" id="play"> Play</button>
+    <button  type="text" id="pause"> Pause</button>
+  
+-->
+     
+
+  </div>
+
+</body>
+
+</html>
